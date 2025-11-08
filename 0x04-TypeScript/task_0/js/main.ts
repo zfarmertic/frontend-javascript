@@ -19,22 +19,7 @@ const studentTwo: Student = {
     location: "Delat state, Nigeria"
 }
 
-const studentList = [studentOne, studentTwo]
-
-
-// var studentOne = {
-//     firstName: "Erovwo",
-//     lastName: "Igbunuoghene",
-//     age: 45,
-//     location: "Enugu state, Nigeria"
-// };
-// var studentTwo = {
-//     firstName: "Merit",
-//     lastName: "Onogbotsere",
-//     age: 56,
-//     location: "Delat state, Nigeria"
-// };
-// var studentList = [studentOne, studentTwo];
+const studentsList = [studentOne, studentTwo];
 
 
 function createTable(){
@@ -54,7 +39,9 @@ function createTable(){
 
         thead.appendChild(headerRow)
         table.appendChild(thead)
-studentList.forEach(tableBody => {
+
+
+studentsList.forEach(tableBody => {
     const row = document.createElement("tr")
     const firstCell = document.createElement("td")
     firstCell.textContent = tableBody.firstName
